@@ -65,15 +65,15 @@ rm -rf /tmp/T*.bin
 
 if [ "$versao" == "XM" ]; then
         #URL='http://dl.ubnt.com/firmwares/XN-fw/v5.6.6/XM.v5.6.6.29183.160526.1225.bin'
-	      URL='https://dl.ubnt.com/firmwares/XN-fw/v6.0.4/XM.v6.0.4.30805.170505.1525.bin'
+	URL='https://dl.ubnt.com/firmwares/XN-fw/v6.0.4/XM.v6.0.4.30805.170505.1525.bin'
 fi
 if [ "$versao" == "XW" ]; then
         #URL='http://dl.ubnt.com/firmwares/XW-fw/v5.6.6/XW.v5.6.6.29183.160526.1205.bin'
-	      URL='https://dl.ubnt.com/firmwares/XW-fw/v6.0.4/XW.v6.0.4.30805.170505.1510.bin'
+	URL='https://dl.ubnt.com/firmwares/XW-fw/v6.0.4/XW.v6.0.4.30805.170505.1510.bin'
 fi
 if [ "$versao" == "TI" ]; then
         #URL='http://dl.ubnt.com/firmwares/XN-fw/v5.6.6/TI.v5.6.6.29183.160526.1144.bin'
-	      URL='https://dl.ubnt.com/firmwares/XN-fw/v6.0.4/TI.v6.0.4.30805.170505.1456.bin'
+	URL='https://dl.ubnt.com/firmwares/XN-fw/v6.0.4/TI.v6.0.4.30805.170505.1456.bin'
 fi
 
 wget -c $URL -O /tmp/firmware.bin
