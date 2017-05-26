@@ -76,7 +76,8 @@ if [ "$versao" == "TI" ]; then
 	URL='http://dl.ubnt.com/firmwares/XN-fw/v6.0.4/TI.v6.0.4.30805.170505.1456.bin'
 fi
 
-wget -c $URL -O /tmp/firmware.bin
+#wget -c $URL -O /tmp/firmware.bin
+wget $URL -O /tmp/firmware.bin
 
 if [ -e "/tmp/firmware.bin" ] ; then
         ubntbox fwupdate.real -m /tmp/firmware.bin
