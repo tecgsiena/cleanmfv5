@@ -77,7 +77,7 @@ if [ "$versao" == "TI" ]; then
 fi
 
 #wget -c $URL -O /tmp/firmware.bin
-wget $URL -O /tmp/firmware.bin
+wget -s -c $URL -O /tmp/firmware.bin
 
 if [ -e "/tmp/firmware.bin" ] ; then
         ubntbox fwupdate.real -m /tmp/firmware.bin
